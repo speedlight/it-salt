@@ -1,4 +1,4 @@
-{% if pillar.get('app_role', '') %}
+#{% if pillar.get('app_role', '') %}
 pacdeps:
   pkg:
     - installed
@@ -39,4 +39,4 @@ pacdeps:
       - gcc
       - webmin
       - samba3x-client
-{% endif %}
+#{% endif %}
