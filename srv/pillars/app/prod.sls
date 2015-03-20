@@ -1,1 +1,1 @@
-add_role: prod
+app_role: prod

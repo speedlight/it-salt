@@ -1,7 +1,7 @@
 base:
   '*':
     - app.prod
-  '*':
-    - app.it
-  '*':
-    - app.dev
+#  '*':
+#    - app.it
+#  '*':
+#    - app.dev
