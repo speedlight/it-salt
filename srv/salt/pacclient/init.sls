@@ -1,8 +1,14 @@
-#{% if pillar.get('app_role', '') %}
-pacdeps:
-  pkg:
-    - installed
+pacdeps-removed:
+  pkg.removed:
     - pkgs:
+      - samba
+      - samba-common
+      - samba-client
+      - samba-winbind
+pacdeps-installed:
+  pkg.installed:
+    - pkgs:
+      - samba3x-client
       - httpd
       - php
       - php-mysql
@@ -25,7 +31,6 @@ pacdeps:
       - unixODBC
       - distcache
       - webalizer
-      - system-config-samba
       - postfix
       - cups
       - ghostscript
@@ -34,9 +39,5 @@ pacdeps:
       - hal-cups-utils
       - hplip
       - paps
-      - samba-client
       - system-config-printer
       - gcc
-      - webmin
-      - samba3x-client
-#{% endif %}
