@@ -6,7 +6,7 @@ pacdeps-removed:
       - samba-client
       - samba-winbind
 pacdeps-installed:
-  pkg.installed:
+  pkg.latest:
     - pkgs:
       - samba3x-client
       - httpd
