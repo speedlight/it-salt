@@ -1,7 +1,0 @@
-[saltstack-salt-el5]
-name=Copr repo for salt-el5 owned by saltstack
-baseurl=https://copr-be.cloud.fedoraproject.org/results/saltstack/salt-el5/epel-5-$basearch/
-skip_if_unavailable=True
-gpgcheck=1
-gpgkey=https://copr-be.cloud.fedoraproject.org/results/saltstack/salt-el5/pubkey.gpg
-enabled=1
