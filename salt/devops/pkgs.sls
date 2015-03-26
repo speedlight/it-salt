@@ -7,3 +7,4 @@ devops-installed:
       - git
       - salt-minion
       - pandorafms_agent_unix
+      - vim-enhanced
