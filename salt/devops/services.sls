@@ -1,10 +1,6 @@
-service: 
-    - name: salt-minion 
+salt-minion:
+  service:
     - running 
-    - require: 
-      - cmd: minion-service 
-minion-service: 
-  cmd.run: 
-    - name: /etc/init.d/salt-minion restart 
-    - require: 
-      - pkg: salt-minion 
+pandora_agent_daemon:
+  service:
+    - running 
