@@ -41,3 +41,4 @@ pacdeps-installed:
       - paps
       - system-config-printer
       - gcc
+      - webmin
