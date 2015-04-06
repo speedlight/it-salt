@@ -9,26 +9,7 @@ pacdeps-installed:
   pkg.latest:
     - pkgs:
       - samba3x-client
-      - httpd
-      - php
-      - php-mysql
-      - php-odbc
-      - php-xml
-      - php-pear
-      - php-ldap
-      - php-soap
-      - php-mbstring
-      - php-mcrypt
-      - mysql
-      - mysql-server
       - crypto-utils
-      - mod_perl
-      - mod_python
-      - mod_ssl
-      - mod_auth_mysql
-      - mysql-connector-odbc
-      - perl-DBD-MySQL
-      - unixODBC
       - distcache
       - webalizer
       - postfix
@@ -42,3 +23,4 @@ pacdeps-installed:
       - system-config-printer
       - gcc
       - webmin
+      - ftp

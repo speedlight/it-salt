@@ -1,7 +1,20 @@
 apache:
-  pkg.installed:
+  pkg.latest:
     - pkgs:
       - httpd
+      - php
+      - php-mysql
+      - php-odbc
+      - php-xml
+      - php-pear
+      - php-ldap
+      - php-soap
+      - php-mbstring
+      - php-mcrypt
+      - mod_perl
+      - mod_python
+      - mod_ssl
+      - mod_auth_mysql
   service.running:
     - name: httpd
     - watch:
@@ -24,7 +37,7 @@ apache:
 httpd.conf:
   file.managed:
     - name: /etc/httpd/conf/httpd.conf
-    - source: salt://pacclient/files/httpd.conf
+    - source: salt://pacclient/apache/httpd.conf
     - user: root
     - group: root
     - mode: 644
@@ -32,7 +45,7 @@ httpd.conf:
 ssl.conf:
   file.managed:
     - name: /etc/httpd/conf.d/ssl.conf
-    - source: salt://pacclient/files/ssl.conf
+    - source: salt://pacclient/apache/ssl.conf
     - user: root
     - group: root
     - mode: 644
