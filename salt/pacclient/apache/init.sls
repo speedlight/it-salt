@@ -34,18 +34,22 @@ apache:
     - require:
       - pkg: apache
 
+{% if grains['osmajorrelease'] == '5' %}
 httpd.conf:
   file.managed:
     - name: /etc/httpd/conf/httpd.conf
-    - source: salt://pacclient/apache/httpd.conf
+    - source: salt://pacclient/apache/httpd-centos5.conf
     - user: root
     - group: root
     - mode: 644
+{% endif %}
 
+{% if grains['osmajorrelease'] == '5' %}
 ssl.conf:
   file.managed:
     - name: /etc/httpd/conf.d/ssl.conf
-    - source: salt://pacclient/apache/ssl.conf
+    - source: salt://pacclient/apache/ssl-centos5.conf
     - user: root
     - group: root
     - mode: 644
+{% endif %}
